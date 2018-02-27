@@ -1,4 +1,4 @@
-# CoolKey-Smidgen Deployment
+# IOTAcooler-Smidgen Deployment
 
 ## As Single Executable
 
