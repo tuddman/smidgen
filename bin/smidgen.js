@@ -28,10 +28,10 @@ const parsed = nopt({
 }, {}, process.argv, 2)
 
 const home = osenv.home()
-parsed.smidgenconf = path.join(home, '.smidgenrc')
+parsed.smidgenconf = path.join(home, '.iota-cooler-smidgenrc')
 
 if (!fs.existsSync(parsed.smidgenconf)) {
-  fs.writeFileSync(parsed.smidgenconf, '{"provider": "https://field.carriota.com:443"}')
+  fs.writeFileSync(parsed.smidgenconf, '{"provider": "https://nodes.thetangle.org:443"}')
 }
 
 const cmd = parsed.argv.remain.shift()
