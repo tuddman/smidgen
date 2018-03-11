@@ -33,7 +33,7 @@ parsed.smidgenconf = path.join(home, '.iota-cooler-smidgenrc')
 
 if (!fs.existsSync(parsed.smidgenconf)) {
   //Don't use config file but --provider arg
-  //fs.writeFileSync(parsed.smidgenconf, '{"provider": "https://nodes.thetangle.org:443"}')
+  //fs.writeFileSync(parsed.smidgenconf, '{"provider": "https://field.carriota.com:443"}')
 }*/
 
 const cmd = parsed.argv.remain.shift()
