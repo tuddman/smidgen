@@ -2,6 +2,7 @@
 
 Status: *smidgen is in late BETA right now*
 
+  - [Fork Purpose](#fork-purpose)
   - [Installation](#installation)
   - [Config](#config)
   - [Multisignature Wallets](#multisignature-wallets)
@@ -21,6 +22,12 @@ Status: *smidgen is in late BETA right now*
     - 'get-balance'
     - 'generate-address'
     - transfer
+
+## Fork Purpose
+
+iotacooler-smidgen is a fork of smidgen to be used by IOTAcooler. Changes include added functionality for transaction promoting, address reuse checking on multisig transfers, disabled conf file and minor changes to allow nodejs binaries building with `pkg`. If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
+
+(original README below)
 
 ## Installation
 
