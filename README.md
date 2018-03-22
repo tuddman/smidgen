@@ -12,6 +12,7 @@ Status: *smidgen is in late BETA right now*
     - generate-address
     - transfer
     - reattach
+    - promote
     - regenerate-addresses
     - multisig create
     - multisig add
@@ -25,7 +26,7 @@ Status: *smidgen is in late BETA right now*
 
 ## Fork Purpose
 
-iotacooler-smidgen is a fork of smidgen to be used by IOTAcooler. Changes include added functionality for transaction promoting, address reuse checking on multisig transfers, disabled conf file and minor changes to allow nodejs binaries building with `pkg`. If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
+iotacooler-smidgen is a fork of smidgen to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler). Changes include added functionality for transaction promoting, address reuse checking on multisig transfers, disabled conf file and minor changes to allow nodejs binaries building with `pkg`. If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
 
 (original README below)
 
@@ -104,6 +105,12 @@ before, which can lead to loss of IOTA for the owner of the address.
 ### reattach &lt;transaction&gt; [--provider]
 
 Replays a specific transaction.
+
+**Important:** Right now smidgen is not doing the POW itself and depends on a full node as a provider for transfers. You can specify a full node with `--provider`.
+
+### promote &lt;transaction&gt; [--provider]
+
+Promotes a specific transaction.
 
 **Important:** Right now smidgen is not doing the POW itself and depends on a full node as a provider for transfers. You can specify a full node with `--provider`.
 
