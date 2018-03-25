@@ -23,11 +23,13 @@ const parsed = nopt({
   'security': [ Number ],
   'balance': [ Number ],
   'amount': [ Number ],
-  'validation': [ Boolean ]
+  'validation': [ Boolean ],
+  'tag': [ String ] //IOTACOOLER custom tag
 
 }, {}, process.argv, 2)
 
 
+//IOTACOOLER> disable conf file
 /*const home = osenv.home()
 parsed.smidgenconf = path.join(home, '.iota-cooler-smidgenrc')
 

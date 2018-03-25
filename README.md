@@ -26,7 +26,7 @@ Status: *smidgen is in late BETA right now*
 
 ## Fork Purpose
 
-iotacooler-smidgen is a fork of smidgen to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler). Changes include added functionality for transaction promoting, extended address reuse checking to also include multisig transfers and pre snapshot addresses, disabled conf file and minor changes to allow nodejs binaries building with `pkg`. If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
+iotacooler-smidgen is a fork of smidgen to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler). Changes include added functionality for transaction promoting, extended address reuse checking to also include multisig transfers and pre snapshot addresses, custom tag (--tag MYTAG999...9), disabled conf file and minor changes to allow nodejs binaries building with `pkg`. If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
 
 (original README below)
 
