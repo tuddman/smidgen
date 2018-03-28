@@ -33,6 +33,7 @@ Changes include:
 - extended address reuse checking to also include multisig transfers and pre snapshot addresses
 - custom tag (--tag MYTAG999...9)
 - IOTAcooler specific funds recovery commands
+- command to check whether an address was already used (spent from)
 - disabled conf file and minor changes to allow nodejs binaries building with `pkg`.
 
 If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
