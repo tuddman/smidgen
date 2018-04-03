@@ -26,7 +26,7 @@ Status: *smidgen is in late BETA right now*
 
 ## Fork Purpose
 
-iotacooler-smidgen is a fork of smidgen to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler).
+iotacooler-smidgen is a fork of [smidgen](https://github.com/bitfinexcom/smidgen) to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler).
 
 Changes include:
 - added functionality for transaction promoting
