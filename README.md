@@ -36,7 +36,7 @@ Changes include:
 - command to check whether an address was already used (spent from)
 - disabled conf file and minor changes to allow nodejs binaries building with `pkg`.
 
-If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions.
+If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions. Alternatively pre-compiled binaries can be downloaded from the [releases](https://github.com/joshirio/iota-cooler-smidgen/releases) tab.
 
 (original README below)
 
