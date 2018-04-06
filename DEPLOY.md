@@ -10,3 +10,7 @@ The following steps describe how to compile smidgen into a single binary file fo
 4. install missing local npm dependencies with `npm install`
 5. create executables with `pkg .` Example: `pkg . --targets latest-linux,latest-macos,latest-win-x86 -o iotacooler-smidgen`
 6. see [targets](https://www.npmjs.com/package/pkg#targets) for arch specific requirements
+
+## Pre-compiled Binaries
+
+Alternatively, precompiled-binaries are available at the [releases](https://github.com/joshirio/iota-cooler-smidgen/releases) page.
