@@ -2,6 +2,7 @@
 
 Status: *smidgen is in late BETA right now*
 
+  - [Fork Purpose](#fork-purpose)
   - [Installation](#installation)
   - [Config](#config)
   - [Multisignature Wallets](#multisignature-wallets)
@@ -11,6 +12,7 @@ Status: *smidgen is in late BETA right now*
     - generate-address
     - transfer
     - reattach
+    - promote
     - regenerate-addresses
     - multisig create
     - multisig add
@@ -21,6 +23,22 @@ Status: *smidgen is in late BETA right now*
     - 'get-balance'
     - 'generate-address'
     - transfer
+
+## Fork Purpose
+
+iotacooler-smidgen is a fork of [smidgen](https://github.com/bitfinexcom/smidgen) to be used by [IOTAcooler](https://github.com/joshirio/iota-cooler).
+
+Changes include:
+- added functionality for transaction promoting
+- extended address reuse checking to also include multisig transfers and pre snapshot addresses
+- custom tag (--tag MYTAG999...9)
+- IOTAcooler specific funds recovery commands
+- command to check whether an address was already used (spent from)
+- disabled conf file and minor changes to allow nodejs binaries building with `pkg`.
+
+If you want to build your own binaries from source, read [DEPLOY](https://github.com/joshirio/iota-cooler-smidgen/blob/master/DEPLOY.md) for instructions. Alternatively pre-compiled binaries can be downloaded from the [releases](https://github.com/joshirio/iota-cooler-smidgen/releases) tab.
+
+(original README below)
 
 ## Installation
 
@@ -97,6 +115,12 @@ before, which can lead to loss of IOTA for the owner of the address.
 ### reattach &lt;transaction&gt; [--provider]
 
 Replays a specific transaction.
+
+**Important:** Right now smidgen is not doing the POW itself and depends on a full node as a provider for transfers. You can specify a full node with `--provider`.
+
+### promote &lt;transaction&gt; [--provider]
+
+Promotes a specific transaction.
 
 **Important:** Right now smidgen is not doing the POW itself and depends on a full node as a provider for transfers. You can specify a full node with `--provider`.
 

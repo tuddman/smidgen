@@ -4,3 +4,6 @@
 node_modules
 npm-debug.log
 package-lock.json
+smidgen-linux
+smidgen-macos
+smidgen-win.exe

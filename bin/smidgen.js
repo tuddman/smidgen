@@ -3,9 +3,9 @@
 'use strict'
 
 const nopt = require('nopt')
-const osenv = require('osenv')
-const path = require('path')
-const fs = require('fs')
+//const osenv = require('osenv')
+//const path = require('path')
+//const fs = require('fs')
 
 const smidgen = require('../lib/smidgen.js')
 const handleError = require('../lib/handle-error.js')
@@ -23,16 +23,20 @@ const parsed = nopt({
   'security': [ Number ],
   'balance': [ Number ],
   'amount': [ Number ],
-  'validation': [ Boolean ]
+  'validation': [ Boolean ],
+  'tag': [ String ] //IOTACOOLER custom tag
 
 }, {}, process.argv, 2)
 
-const home = osenv.home()
-parsed.smidgenconf = path.join(home, '.smidgenrc')
+
+//IOTACOOLER> disable conf file
+/*const home = osenv.home()
+parsed.smidgenconf = path.join(home, '.iota-cooler-smidgenrc')
 
 if (!fs.existsSync(parsed.smidgenconf)) {
-  fs.writeFileSync(parsed.smidgenconf, '{"provider": "http://iota.bitfinex.com:80"}')
-}
+  //Don't use config file but --provider arg
+  //fs.writeFileSync(parsed.smidgenconf, '{"provider": "https://field.carriota.com:443"}')
+}*/
 
 const cmd = parsed.argv.remain.shift()
 
